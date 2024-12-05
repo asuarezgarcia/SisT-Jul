@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B94F7442-8489-8A18-87E0-59CA3A97F496" name="Sucursal">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:11:33 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="FB6C96FB-15F4-1C9C-B11F-31788B6A2491">
+<createdBy>mono</createdBy>
+<createdTime>2024-10-30 02:36:42 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="9275FA0B-F12B-BCD9-E44C-EA982D253D88">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:13:06 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="55A82D7B-4B92-DB9D-745B-7D2B8D5FC501">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:27:59 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="006EA3DE-EFEB-0009-9B34-BA697DDAEC7A">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:28:17 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ciudad" id="ADEE6F91-74BF-9C6A-23CC-B55AB9600EDD">
+<createdBy>mono</createdBy>
+<createdTime>2024-11-25 23:41:51 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tamanio" id="28DEBF4C-5450-1064-0A50-64BED288871D">
+<createdBy>mono</createdBy>
+<createdTime>2024-11-25 23:43:09 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E662942-8276-BA9E-B4D6-9A2C481B6254" name="Sucursal PK">
+<createdBy>mono</createdBy>
+<createdTime>2024-09-30 23:25:50 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FB6C96FB-15F4-1C9C-B11F-31788B6A2491</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

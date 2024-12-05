@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4593670D-03BD-FF61-353C-4773F82AEC60" name="ProductoOrden">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:45:07 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantidad_pedida" id="722028A8-4F2B-1BB5-52C0-A708C582EC5F">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:45:30 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_entregada" id="443BB798-1257-55B9-4894-AA647BC9F350">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-31 01:06:03 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio_acordado" id="058EC2D3-C481-CF0D-9E7B-A3AE8152309C">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-28 01:45:55 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo_promedio" id="3F0F2D90-9D35-9151-6808-6C46F90D8208">
+<createdBy>mono</createdBy>
+<createdTime>2024-08-31 01:06:39 UTC</createdTime>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="59294D42-C4E3-1247-AF26-8FD95CAB08F7">
+<createdBy>mono</createdBy>
+<createdTime>2024-09-30 23:20:52 UTC</createdTime>
+<generatorID>304422B3-6A14-3846-87DC-6B69867994DA</generatorID>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<referedAttribute>6E3CC4DE-94BB-D88F-92AD-44E2A7FDB76B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="DBD3EE35-574B-B4FD-B231-16ADF314FBA4">
+<createdBy>mono</createdBy>
+<createdTime>2024-09-30 23:22:42 UTC</createdTime>
+<generatorID>9FB99AAD-5D9D-8962-DD2C-93B9A8F0EF44</generatorID>
+<ownerDesignName>Relacional</ownerDesignName>
+<engineerTo>
+<item key="425C96FD-3265-D20F-92B9-67327F49FD53" value="true"/>
+</engineerTo>
+<referedAttribute>CB080549-141B-0731-3CD2-61E1FAD7ACD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

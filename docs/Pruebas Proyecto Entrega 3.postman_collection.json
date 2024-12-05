@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "b243d03f-caa5-4ce2-9b62-b856fac36ff2",
+		"name": "Pruebas Proyecto Entrega 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38515624",
+		"_collection_link": "https://bold-station-36930.postman.co/workspace/Pruebas-Sistrans-PostMan~2d99ecfd-d556-46ca-8d35-0e3b7ef980b2/collection/38515624-b243d03f-caa5-4ce2-9b62-b856fac36ff2?action=share&source=collection_link&creator=38515624"
+	},
+	"item": [
+		{
+			"name": "Crear una sucursal (RF1)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sucursal La Calera\",\r\n    \"tamanio\": 300,\r\n    \"direccion\": \"Av. Principal 123\",\r\n    \"telefono\": 3201234567\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/sucursales/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"sucursales",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una Bodega (RF2)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Bodega Tercera\",\r\n    \"tamanio\": 200,\r\n    \"ubicacion\": \"Av. Principal 123\",\r\n    \"sucursal_id\": {\r\n        \"id\":\"674be8ab4919601a4519633d\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/bodegas/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"bodegas",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar una Bodega (RF2)",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un Proveedor (RF3)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nit\": \"900123498\",\r\n    \"nombre\": \"Proveedor 4 S.A.\",\r\n    \"direccion\": \"Calle 123.5 #45-67\",\r\n    \"telefono_contacto\": 3201234532,\r\n    \"nombre_contacto\": \"Carlos Alcaraz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/proveedores/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"proveedores",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un proveedor (RF3)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nit\": \"900123498\",\r\n    \"nombre\": \"Proveedor 4 S.A.\",\r\n    \"direccion\": \"Calle 72 #32 - 37\",\r\n    \"telefono_contacto\": 3201234532,\r\n    \"nombre_contacto\": \"Carlos Alcaraz Gomez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/proveedores/674bd90a280b802a9e843f2d/edit/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"proveedores",
+						"674bd90a280b802a9e843f2d",
+						"edit",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una Categoría Producto (RF4)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Muebles\",\r\n    \"descripcion\": \"Productos de uso doméstico\",\r\n    \"almacenamiento\": \"Almacenamiento a temperatura ambiente\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/categorias/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"categorias",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un Producto (RF5)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": \"P004\",\r\n    \"nombre\": \"Microondas\",\r\n    \"costo_bodega\": 1000.00,\r\n    \"precio_unidad\": 1200.00,\r\n    \"presentacion\": \"Caja de 1 unidad\",\r\n    \"cantidad\": \"50\",\r\n    \"unidad_medida\": \"gr\",\r\n    \"especificacion\": \"Electrodomestico\",\r\n    \"proveedor_id\": {\r\n        \"id\": \"674bd90a280b802a9e843f2d\"\r\n    },\r\n    \"categoria_id\": {\r\n        \"id\": \"674be5e74919601a45196336\"\r\n    },\r\n    \"fecha\": \"2024-11-14\",\r\n    \"sucursal_id\": {\r\n        \"id\":\"674bd732280b802a9e843f2a\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/productos/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"productos",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una Orden de Compra (RF6)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\": \"VIGENTE\",\r\n    \"proveedor_id\": {\r\n        \"id\":\"674bd90a280b802a9e843f2d\",\r\n        \"nit\": \"900123456\",\r\n        \"nombre\": \"Proveedor 1 S.A.\",\r\n        \"direccion\": \"Calle 123 #45-67\",\r\n        \"telefono_contacto\": 3201234567,\r\n        \"nombre_contacto\": \"Carlos Pérez\"\r\n    },\r\n    \"sucursal_id\": {\r\n        \"nombre\": \"Sucursal Norte\",\r\n        \"tamanio\": 300,\r\n        \"direccion\": \"Av. Principal 123\",\r\n        \"telefono\": 3201234567,\r\n        \"ciudad_codigo\": {\r\n            \"codigo\": \"BOG\",\r\n            \"nombre\": \"Bogotá\"\r\n        }\r\n    },\r\n    \"bodega_id\": {\r\n        \"id\":\"674be8ab4919601a4519633e\",\r\n        \"nombre\": \"Bodega Central\",\r\n        \"tamanio\": 200,\r\n        \"ubicacion\": \"Av. Principal 123\",\r\n        \"sucursal_nombre\": {\r\n            \"nombre\": \"Sucursal Norte\",\r\n            \"tamanio\": 300,\r\n            \"direccion\": \"Av. Principal 123\",\r\n            \"telefono\": 3201234567,\r\n            \"ciudad_codigo\": {\r\n                \"codigo\": \"BOG\",\r\n                \"nombre\": \"Bogotá\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/ordenes/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"ordenes",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leer una Orden de Compra (RF7)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Productos Según Características (RFC1)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/productos/productosSegunSpecs?precio_min=0&precio_max=100000&fecha=2024/11/14&categoria_id=674be5e74919601a45196336&sucursal_id=674bd732280b802a9e843f2a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"productos",
+						"productosSegunSpecs"
+					],
+					"query": [
+						{
+							"key": "precio_min",
+							"value": "0"
+						},
+						{
+							"key": "precio_max",
+							"value": "100000"
+						},
+						{
+							"key": "fecha",
+							"value": "2024/11/14"
+						},
+						{
+							"key": "categoria_id",
+							"value": "674be5e74919601a45196336"
+						},
+						{
+							"key": "sucursal_id",
+							"value": "674bd732280b802a9e843f2a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventario de Productos en una Sucursal (RFC2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SuperAndes/productos/inventario?sucursal_id=674bf1d0169fe94ca13acaa5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SuperAndes",
+						"productos",
+						"inventario"
+					],
+					"query": [
+						{
+							"key": "sucursal_id",
+							"value": "674bf1d0169fe94ca13acaa5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
